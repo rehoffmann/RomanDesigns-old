@@ -4,9 +4,9 @@ import classes from "./Icon.module.css";
 
 const logos = () => {
     return(
-    
+        <a href='https://github.com/rehoffmann'>
         <img className={classes.resize} src={git}/>
-    
+        </a>
     )
 } 
 
