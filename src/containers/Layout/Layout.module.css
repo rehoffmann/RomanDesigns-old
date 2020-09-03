@@ -1,12 +1,10 @@
 .Layout {
     display: flex;
     flex-flow: column;
+    
 }
 
 .headerWrapper{
     height: 75px;
 }
 
-.bodyWrapper{
-    height: 100vh;
-}

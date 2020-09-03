@@ -15,11 +15,11 @@ class Layout extends Component {
                 <div className={classes.headerWrapper}>
         <Header/>
         </div>
-        <div className={classes.bodyWrapper}>
+     
         <Switch>
         <Route path ='/' exact component={Home}/>
         </Switch>
-        </div>
+      
             </div>
         );
     }

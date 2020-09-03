@@ -5,6 +5,7 @@ import Type from "../../components/Typography/Type.js";
 
 
 
+
 const Home = () => {
 
 
@@ -22,6 +23,9 @@ const Home = () => {
 <Type/>
 </div>
 <Footer/>
+
+
+<div className={classes.bottomPage}>1</div>
     </div>
     )
 }
