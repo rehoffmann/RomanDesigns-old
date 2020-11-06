@@ -1,5 +1,7 @@
 .Hero{
-    text-align: center;
+    border: 3px solid #fff;
+    margin-bottom: 80px;
+    padding: 20px;
 }
 
 .Hero1{

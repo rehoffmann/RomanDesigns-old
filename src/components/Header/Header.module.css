@@ -1,14 +1,17 @@
 .Header{
     display: flex;
+
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    height: 100%;
-  
     box-shadow: 
-    0px 2px 4px -1px rgba(0,0,0,0.2), 
-    0px 4px 5px 0px rgba(0,0,0,0.14), 
+    0px 2px 4px -1px rgba(0,0,0,.5), 
+    0px 4px 5px 0px rgba(0,0,0,), 
     0px 1px 10px 0px rgba(0,0,0,0.12);
     z-index: 9;
+
+    height: 80px;
+    width: 100%;
     
 }
 
@@ -25,7 +28,7 @@
     flex: 1 1 0px;
     align-items: center;
     justify-content: center;
-    z-index: 9;
+    height:80%;
 }
 
 .headerRight{
@@ -33,11 +36,18 @@
     flex: 1 1 0px;
     align-items: center;
     justify-content: flex-end;
+}
+
+img{
+    height: 100%;
     z-index: 9;
 }
 
-
-img{
-    max-height: 65px;
-    z-index: 9;
+@media (max-width: 600px) {
+    .headerRight {
+        display: none;
+    }
+    .headerLeft {
+        display: none;
+    }
 }

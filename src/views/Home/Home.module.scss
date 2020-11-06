@@ -2,164 +2,55 @@
 .fullWrapper{
     display: flex;
     flex-flow: column;
-    height: calc(200vh - 150px);
+    height: calc(200vh - 80px);
     width:100vw;
-    z-index: 1;
-}
-.fullWrapper::before{
-    content: "";
-    position: fixed;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-    z-index: 100;
-}
+    margin-top: 2px;
+
+    background: linear-gradient(-45deg, #f8ef6d,#c31432, #240b36, #156e94 );
+    
+    color: #fff;
+  
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 30s ease-in-out infinite;
+
+    box-sizing: content-box;
 
 
-
-
-
-.bottomPage{
-    height:100vh;
-    background: rgb(34,35,48);
-background: linear-gradient(360deg, rgba(34,35,48,1) 0%, rgba(18,56,73,1) 33%, rgba(1,88,113,1) 93%);
 }
 
-.fullWrapper::before{
-      content: "";
+.topWrapper{
+    display: block;
+    height: calc(100vh - 80px);
+ 
 
-      position: absolute;
-      top: 75px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 25%;
-      z-index: -1;
 }
 
-.mainWrapper{
-    height: calc(100vh - 150px);
-    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-    overflow: hidden;
+.bottomWrapper{
+    display: block;
+    height: 100vh;
 
+}
+
+.textWrapper{
     display: flex;
+    height: 100%;
     align-items: center;
-    justify-content: center;
+  justify-content: center;
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 
 
 
-
-.clouds{
-    padding-top: 150px;
-    position: absolute;
-	background: -webkit-linear-gradient(top, #7FFFD4 0%, #fff 100%);
-	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-    z-index: 1;
-}
-
-/*Time to finalise the cloud shape*/
-.cloud {
-	width: 200px; height: 60px;
-	background: #c9dbe9;
-	
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	
-    position: relative; 
-    z-index: 1;
-}
-
-.cloud:before, .cloud:after {
-	content: '';
-	position: absolute; 
-	background: #c9dbe9;
-	width: 100px; height: 80px;
-	position: absolute; top: -15px; left: 10px;
-	
-	border-radius: 100px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	
-	-webkit-transform: rotate(30deg);
-	transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    z-index: 1;
-}
-
-.cloud:after {
-	width: 120px; height: 120px;
-    top: -55px; left: auto; right: 15px;
-    z-index: 1;
-}
-
-/*Time to animate*/
-.x1 {
-    animation: moveclouds 20s linear infinite;
-    z-index: 1;
-}
-
-/*variable speed, opacity, and position of clouds for realistic effect*/
-.x2 {
-	left: 200px;
-	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
-	transform: scale(0.6);
-	opacity: 0.6; /*opacity proportional to the size*/
-	
-	/*Speed will also be proportional to the size and opacity*/
-	/*More the speed. Less the time in 's' = seconds*/
-    animation: moveclouds 32s linear infinite;
-    z-index: 1;
-
-}
-
-.x3 {
-	left: -250px; top: -200px;
-	
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 0.8; /*opacity proportional to the size*/
-	
-    animation: moveclouds 27s linear infinite;
-    z-index: 1;
-
-}
-
-.x4 {
-	left: 470px; top: -250px;
-	
-	-webkit-transform: scale(0.75);
-	-moz-transform: scale(0.75);
-	transform: scale(0.75);
-	opacity: 0.75; /*opacity proportional to the size*/
-	
-    animation: moveclouds 25s linear infinite;
-    z-index: 1;
-
-}
-
-.x5 {
-	left: -150px; top: -150px;
-	
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 0.8; /*opacity proportional to the size*/
-	
-    animation: moveclouds 30s linear infinite;
-    z-index: 1;
-}
-
-@keyframes moveclouds {
-	0% {margin-left: 2000px;}
-  50% {opacity: 100%}
-	100% {margin-left: -500px;opacity: 50%}
-}

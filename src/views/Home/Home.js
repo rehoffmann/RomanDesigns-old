@@ -12,21 +12,15 @@ const Home = () => {
     return(
         <div className={classes.fullWrapper}>
            
-            <div className={classes.clouds}>
-	<div className={classes.cloud + ' '+ classes.x1}></div>
-	<div className={classes.cloud + ' '+ classes.x2}></div>
-	<div className={classes.cloud + ' '+ classes.x3}></div>
-	<div className={classes.cloud + ' '+ classes.x4}></div>
-	<div className={classes.cloud + ' '+ classes.x5}></div>
+           
+            <div className={classes.topWrapper}>
+                <div className={classes.textWrapper}>
+                <Type/>
+                </div>
             </div>
-            <div className={classes.mainWrapper}>
-<Type/>
-</div>
-<Footer/>
 
-
-<div className={classes.bottomPage}>1</div>
-    </div>
+            <div className={classes.bottomWrapper}>1</div>
+        </div>
     )
 }
 

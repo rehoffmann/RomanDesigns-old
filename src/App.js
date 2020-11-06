@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 import Layout from './containers/Layout/Layout';
-import { BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import Home from './views/Home/Home';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+    
       
-        <Layout/>
+      //layout should have 
+        <Layout>
+        <Switch>
+          <Route path="/" component={Home}/>
+        </Switch>
+        
+        
+        </Layout>
       
-      </BrowserRouter>
+ 
     );
   }
 }

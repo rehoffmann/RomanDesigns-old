@@ -12,9 +12,9 @@ class Layout extends Component {
 
         return (
             <div className={classes.Layout}>
-                <div className={classes.headerWrapper}>
+             
         <Header/>
-        </div>
+    
      
         <Switch>
         <Route path ='/' exact component={Home}/>
