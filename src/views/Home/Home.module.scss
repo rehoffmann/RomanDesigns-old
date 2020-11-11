@@ -5,14 +5,14 @@
     height: calc(200vh - 80px);
     width:100vw;
     margin-top: 2px;
-
-    background: linear-gradient(-45deg, #f8ef6d,#c31432, #240b36, #156e94 );
     
-    color: #fff;
+    background: linear-gradient(-45deg, #380e1c, #310f49, #133b22, #11143d,#31738f );
+    
+    color: white;
   
     background-size: 400% 400%;
     position: relative;
-    animation: change 30s ease-in-out infinite;
+    animation: change 20s ease-in-out infinite;
 
     box-sizing: content-box;
 

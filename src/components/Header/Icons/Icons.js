@@ -1,20 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import classes from './Icon.module.scss';
 
 
-import Git from './githubIcon.js';
-import Linked from './linkedinIcon.js';
-import classes from './Icon.module.css';
 
-const Icons = (props) =>(
+class Icons extends Component {
 
-<div>
-    <Git/>
-    <div className={classes.spacer}/>
-    <Linked/>
-    <div className={classes.spacer}/>
+   
+
+    render(){
+
+    
+
+    return(
+<div className={classes.socialContainer}>
+
+    <ul className={classes.socialIcons}>
+      
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        
+    </ul>
+   
 </div>
 
 );
-
+    }
+}
 
 export default Icons;
+
+

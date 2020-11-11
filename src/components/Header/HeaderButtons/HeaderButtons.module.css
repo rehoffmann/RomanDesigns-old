@@ -3,9 +3,12 @@
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-inline-start: 0px;
+    height: 100%;
 }
 
 .spacer{
-    width:10px;
+    width:auto;
+    user-select: none;
 }
