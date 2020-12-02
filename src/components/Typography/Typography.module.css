@@ -1,7 +1,9 @@
 .Hero{
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     margin-bottom: 80px;
     padding: 20px;
+    /* background-color: rgba(180,180,180,.1); */
+    backdrop-filter: blur(5px);
 }
 
 .Hero1{

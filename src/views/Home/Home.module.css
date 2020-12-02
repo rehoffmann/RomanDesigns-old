@@ -1,56 +1,52 @@
 
 .fullWrapper{
-    display: flex;
+    display: inline-block;
     flex-flow: column;
-    height: calc(200vh - 80px);
+    height: 100%;
+    max-height: 100vh;
     width:100vw;
-    margin-top: 2px;
+    max-width: 100vw;
     
-    background: linear-gradient(-45deg, #380e1c, #310f49, #133b22, #11143d,#31738f );
+
     
     color: white;
   
-    background-size: 400% 400%;
+    
     position: relative;
-    animation: change 20s ease-in-out infinite;
 
-    box-sizing: content-box;
+    box-sizing: border-box;
+    overflow: hidden;
+
 
 
 }
 
+.background{
+    max-height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    z-index: -5;
+    
+}
+
 .topWrapper{
+    position: relative;
     display: block;
-    height: calc(100vh - 80px);
+    height: 100%;
  
 
 }
 
-.bottomWrapper{
-    display: block;
-    height: 100vh;
 
-}
 
 .textWrapper{
     display: flex;
-    height: 100%;
     align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 0;
+  top: 45vh;
+  right: 66%;
+  
 }
-
-@keyframes change {
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
-
-
-
 

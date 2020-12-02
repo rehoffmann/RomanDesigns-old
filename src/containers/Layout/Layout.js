@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom';
 
 import classes from './Layout.module.css';
 
 import Home from "../../views/Home/Home.js";
-import Header from "../../components/Header/Header.js";
 
 class Layout extends Component {
 
@@ -13,12 +11,12 @@ class Layout extends Component {
         return (
             <div className={classes.Layout}>
              
-        <Header/>
+       
     
      
-        <Switch>
-        <Route path ='/' exact component={Home}/>
-        </Switch>
+        
+        <Home/>
+        
       
             </div>
         );

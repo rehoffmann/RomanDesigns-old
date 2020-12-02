@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../../assets/logo2.png';
+import logo from '../../assets/newlogocropped.png';
+import classes from './Header.module.css';
 
 const logos = () => {
     return(
