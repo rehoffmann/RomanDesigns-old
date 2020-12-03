@@ -8,7 +8,7 @@
     background-color:rgba(360,360,360,.9);
     z-index: 9;
 
-    height: 80px;
+    height: 60px;
     width: 100%;
     box-shadow: 0 2px 11px rgba(0,0,0,.5); 
 }
@@ -31,12 +31,7 @@
     height:40px;
     max-width: 40px;
     padding: 10px;
-    border-radius: 50%;
     
-    box-shadow: 0 2px 11px rgba(0,0,0,.5); 
-
-    
-    backdrop-filter: blur(5px);
     
 }
 
@@ -50,7 +45,13 @@
 }
 
 img{
-    height: 100%;
+    height: 40px;
+    transition: 0.2s;
+    padding: 10px;
+}
+img:hover{
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 }
 
 

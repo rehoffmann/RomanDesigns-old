@@ -6,7 +6,7 @@ $accent        : #64759e;
 $bluefade      : #657496;
 $gradient      : #b2d2dd;
 
-@mixin transformScale($size: 1) {
+@mixin transformScale($size: .9) {
     transform: scale($size);
     -ms-transform: scale($size);
     -webkit-transform: scale($size);

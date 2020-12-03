@@ -1,20 +1,13 @@
 import React from 'react';
 import classes from './HeaderButtons.module.css';
-import Button from '../../Header/Button/Button.js';
-
-
-
-//could add spacer div but that causes awkward gaps in menu buttons
+import NavigationItem from './NavItem/NavigationItem';
 
 const HeaderButtons = (props) =>(
 
 <ul className ={classes.HeaderButtons}>
-   
-<Button link ='/'>About</Button>
-   <Button link ='/'>Apps</Button>
-  <Button link = '/'>Designs</Button>
-
-  
+  <NavigationItem link ='/about'>About</NavigationItem>
+  <NavigationItem link = '/portfolio'>Portfolio</NavigationItem>
+  <NavigationItem link = '/blog'>Blog</NavigationItem>
 </ul>
 
 );
