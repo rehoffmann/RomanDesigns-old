@@ -48,10 +48,10 @@ img{
     height: 40px;
     transition: 0.2s;
     padding: 10px;
+    transition: .3s;
 }
 img:hover{
-    border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
+    filter: drop-shadow(0 0 3px rgb(221, 43, 43));
 }
 
 

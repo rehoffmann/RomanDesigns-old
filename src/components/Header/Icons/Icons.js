@@ -17,8 +17,8 @@ class Icons extends Component {
 
     <ul className={classes.socialIcons}>
       
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/romanhoffmann/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/rehoffmann"><i class="fa fa-github"></i></a></li>
         
     </ul>
    
